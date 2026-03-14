@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Weight Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+    <h1>Daily Weight Tracker</h1>
+
+    <div class="input-section">
+        <input type="number" id="weightInput" placeholder="Enter today's weight">
+        <button id="saveBtn">Save</button>
+    </div>
+
+    <h2>History</h2>
+    <table id="historyTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Weight</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Trend</h2>
+    <canvas id="weightChart"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
